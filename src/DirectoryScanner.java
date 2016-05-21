@@ -18,7 +18,7 @@ public class DirectoryScanner {
     static boolean autoDelete;
     static long waitInterval;
     static boolean checker = true; //Проверяет, есть ли ошибки во входных данных
-    static String error = "";  //Сообщение об ошибке
+    static String error = "Scanner was not started due to following reasons: " + "\n";  //Сообщение об ошибке
     static boolean alreadyStarted = true; //Проверяет работает ли сканер в данный момент( если да, то новый скан создать нельзя)
 
 
@@ -75,7 +75,7 @@ public class DirectoryScanner {
 
 
                         System.out.println(error);
-                        error = "";
+                        error = "Scanner was not started due to following reasons: " + "\n";
                         checker = true;
                     }
 
